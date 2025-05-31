@@ -1,0 +1,129 @@
+{
+  "slogan": "Cleaning and Disinfection of Wall-Mounted Air Conditioners in Gush Dan",
+  "orderNow": "Order Now",
+  "Feedback": {
+    "title": "Feedback",
+    "success": "Your request has been submitted successfully! We will contact you soon."
+  },
+  "ContactForm": {
+    "labelName": "Name",
+    "labelPhone": "Phone",
+    "validationError": "The phone number must be either 10 digits starting with 05 (e.g., 0523456789) or in the format +9725XXXXXXXX (e.g., +972523456789).",
+    "submit": "Submit"
+  },
+  "PriceCalculator": {
+    "title": "Cost Calculator",
+    "quantityLabel": "Number of Air Conditioners:",
+    "priceLabel": "Price:"
+  },
+  "PriceList": {
+    "title": "Pricing",
+    "items": [
+      {
+        "quantity": "1 air conditioner",
+        "price": "₪250"
+      },
+      {
+        "quantity": "2 air conditioners",
+        "price": "₪450"
+      },
+      {
+        "quantity": "3 air conditioners",
+        "price": "₪600"
+      }
+    ],
+    "note": "Additional diagnostics or complex air conditioner models (VRF, multi-split) are charged separately by agreement."
+  },
+  "InfoBlock1": {
+    "title": "About Our Company",
+    "content": "We specialize in the professional cleaning and disinfection of wall-mounted air conditioners in Gush Dan for over 5 years. Our team of certified technicians uses only high-quality, hypoallergenic products and modern equipment to ensure maximum efficiency and safety for your home or office."
+  },
+  "InfoBlock2": {
+    "title": "Why Cleaning and Disinfection of Your Air Conditioner Are Important",
+    "content": {
+      "line1": {
+        "title": "Air Quality and Health",
+        "content": "Over time, wall-mounted air conditioners accumulate dust, mold, bacteria, and allergens. If regular cleaning is not performed (at least once a year), all of this is circulated throughout the room with the airflow. As a result, respiratory tracts become irritated, frequent colds, allergic reactions, and overall well-being deterioration may occur."
+      },
+      "line2": {
+        "title": "Energy Efficiency",
+        "content": "Clogged filters and the evaporator force the compressor to work harder, causing energy consumption to increase by 10–25%. Regular maintenance helps reduce electricity bills and extend the equipment’s lifespan."
+      },
+      "line3": {
+        "title": "Prolonging the Life of Your Air Conditioner",
+        "content": "Accumulated dirt interferes with the normal operation of the fan and heat exchanger: parts wear out faster, noises or refrigerant leaks may occur. Proper cleaning and disinfection protect the air conditioner components and extend the equipment’s service life by several years."
+      }
+    }
+  },
+  "InfoBlock3": {
+    "title": "How the Cleaning and Disinfection Process Works",
+    "steps": [
+      {
+        "title": "Inspection and Disassembly",
+        "content": "Our technician arrives at the agreed time, disconnects the unit, and carefully disassembles the filters, casing, and components for further cleaning."
+      },
+      {
+        "title": "Internal Component Cleaning",
+        "content": "Filters are washed and disinfected with special hypoallergenic products. The heat exchanger (evaporator) is treated with steam or gentle water pressure to remove dust, mold, and deposits."
+      },
+      {
+        "title": "Drain System Cleaning",
+        "content": "Drain channels and the condensate tray are flushed to prevent clogs and eliminate standing water and odors."
+      },
+      {
+        "title": "Outdoor Unit Cleaning",
+        "content": "The outdoor unit’s heat exchanger (condenser) and fan are cleaned of dust and dirt using high pressure. The radiator fins are inspected and cleared of debris."
+      },
+      {
+        "title": "Disinfection and Reassembly",
+        "content": "Internal components are treated with an antiseptic solution to completely eliminate bacteria and mold. Then all parts are reassembled, filters are installed, and the air conditioner’s operation is tested."
+      }
+    ]
+  },
+  "ServiceArea": {
+    "title": "Service Area",
+    "content": "We operate exclusively within the Gush Dan region and guarantee prompt service to the following areas: Tel Aviv-Yafo, Givatayim, Ramat Gan, Petah Tikva, Bnei Brak, Holon, Ra'anana, and surrounding cities. If your location is not listed, please check availability by phone or via the online form."
+  },
+  "Advantages": {
+    "title": "Why Choose Us",
+    "items": [
+      {
+        "title": "Fast Response",
+        "content": "We guarantee arrival within 24 hours after your request (on business days). Service on Saturdays and holidays is available by agreement with an additional fee."
+      },
+      {
+        "title": "30-Day Quality Guarantee",
+        "content": "If you notice reduced performance, unusual noises, or odors after service, we will return free of charge (provided the issue is not due to mechanical damage)."
+      },
+      {
+        "title": "Safe Products",
+        "content": "All disinfectants and cleaning agents are certified hypoallergenic. We do not use harsh acids or toxic chemicals."
+      },
+      {
+        "title": "Transparent Pricing",
+        "content": "No hidden fees. If you are located within Gush Dan, there are no additional surcharges."
+      },
+      {
+        "title": "Professional Technicians",
+        "content": "Our team consists of certified specialists with over 3 years of experience. We continuously train in new cleaning and disinfection methods and use state-of-the-art equipment."
+      }
+    ]
+  },
+  "CleaningRecommendations": {
+    "title": "Cleaning Frequency Recommendations",
+    "items": [
+      {
+        "title": "Home Wall-Mounted Air Conditioners",
+        "content": "Recommended to service once a year."
+      },
+      {
+        "title": "Office Air Conditioners (operating ≥8 hours/day)",
+        "content": "It is advisable to clean twice a year (spring and late summer) to prevent overload and bacterial buildup."
+      },
+      {
+        "title": "Households with Allergies and Young Children",
+        "content": "Better to perform the procedure every 6 months for maximum safety."
+      }
+    ]
+  }
+}

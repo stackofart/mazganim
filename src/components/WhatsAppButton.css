@@ -1,0 +1,27 @@
+/* src/components/WhatsAppButton.css */
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 90px;          /* отступ снизу (если TelegramButton скрыт, можно поставить 20px) */
+    right: 20px;           /* отступ справа */
+    width: 60px;           /* размер кнопки */
+    height: 60px;
+    background-color: #25D366; /* фирменный зеленый цвет WhatsApp */
+    border-radius: 50%;        /* круглая форма */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+    z-index: 1000;         /* чтобы кнопка была поверх всего */
+}
+
+.whatsapp-button:hover {
+    background-color: #25D366; /* чуть более темный зелёный при наведении */
+}
+
+.whatsapp-button__icon {
+    width: 64px;   /* размер SVG-иконки внутри */
+    height: 64px;
+}

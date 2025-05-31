@@ -1,0 +1,48 @@
+/* src/components/Hero.css */
+/* В начало Hero.css */
+
+
+.hero {
+    width: 100%;                               /* полная ширина */
+    height: 50vh;        /* высота = вся высота экрана минус Header */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;                             /* внутренние отступы не влияют на ширину */
+    background-color: #f5fafa;
+    box-sizing: border-box;                    /* чтобы padding не «ломал» 100% ширины */
+}
+
+.hero__title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5rem;
+    color: #256cff;
+    /* Линейный градиент с повторяющимся набором цветовых точек */
+    text-align: center;
+}
+
+.hero__subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.25rem;
+    font-weight: 400;
+    color: #256cff;
+    margin: 10px 0 30px; /* отступ сверху 10px, снизу 30px */
+}
+
+/* Адаптив: уменьшаем всё на узких экранах */
+@media (max-width: 480px) {
+    .hero__title {
+        font-size: 2rem;
+    }
+    .hero__subtitle {
+        font-size: 1rem;
+        margin: 8px 0 20px;
+    }
+    .hero__btn {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}
+

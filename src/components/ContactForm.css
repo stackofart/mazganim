@@ -1,0 +1,125 @@
+/* src/components/ContactForm.css */
+
+.contact-form {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px 24px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.contact-form__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 16px;
+}
+
+.contact-form__label {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #444;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    text-align: left;
+}
+
+.contact-form__required {
+    color: #e53935; /* красный звездочка */
+    margin-left: 2px;
+}
+
+/* Обычное поле ввода */
+.contact-form__input {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 0.95rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+/* Если валидация не пройдена — красная рамка */
+.contact-form__input--error {
+    border-color: #e53935;
+}
+
+/* При фокусе, если нет ошибки — синяя рамка */
+.contact-form__input:focus {
+    outline: none;
+    border-color: #007acc;
+}
+
+/* Сообщение об ошибке */
+.contact-form__error {
+    color: #e53935;
+    font-size: 0.85rem;
+    margin-top: 4px;
+    text-align: left;
+}
+
+/* Кнопка отправки */
+.contact-form__btn {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #007acc;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.contact-form__btn:hover {
+    background-color: #005fa3;
+}
+
+/* Стили блока «Успешно отправлено» */
+.contact-form--success {
+    /* Можно оставить точно такие же отступы/фон, но без полей */
+    padding: 40px 24px;
+}
+
+.contact-form__success-text {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #007acc;
+    line-height: 1.4;
+}
+
+/* Адаптив для узких экранов */
+@media (max-width: 480px) {
+    .contact-form {
+        margin: 20px 12px;
+        padding: 16px 20px;
+    }
+    .contact-form__title {
+        font-size: 1.25rem;
+        margin-bottom: 12px;
+    }
+    .contact-form__label {
+        font-size: 0.9rem;
+        margin-top: 10px;
+        margin-bottom: 4px;
+    }
+    .contact-form__input {
+        font-size: 0.9rem;
+    }
+    .contact-form__btn {
+        font-size: 0.95rem;
+        padding: 9px 0;
+        margin-top: 16px;
+    }
+    .contact-form__success-text {
+        font-size: 1.1rem;
+    }
+}

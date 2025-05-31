@@ -1,0 +1,90 @@
+/* src/components/PriceCalculator.css */
+
+.price-calculator {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px 24px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.price-calculator__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.price-calculator__label {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #444;
+    margin-top: 12px;
+    margin-bottom: 6px;
+}
+
+.price-calculator__input {
+    width: 100%;
+    max-width: 120px;
+    padding: 8px 12px;
+    font-size: 0.95rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+.price-calculator__input:focus {
+    outline: none;
+    border-color: #007acc;
+}
+
+/* Блок с итоговой ценой */
+.price-calculator__price {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #222;
+}
+
+.price-calculator__amount {
+    color: #007acc;
+}
+
+/* Адаптив для экранов ≤ 480px */
+@media (max-width: 480px) {
+    .price-calculator {
+        margin: 20px 12px;
+        padding: 16px 20px;
+    }
+    .price-calculator__title {
+        font-size: 1.3rem;
+        margin-bottom: 12px;
+    }
+    .price-calculator__label {
+        font-size: 0.9rem;
+        margin-top: 10px;
+        margin-bottom: 4px;
+    }
+    .price-calculator__input {
+        font-size: 0.9rem;
+        padding: 6px 10px;
+        max-width: 100px;
+    }
+    .price-calculator__price {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 1rem;
+    }
+    .price-calculator__amount {
+        margin-top: 6px;
+        font-size: 1.1rem;
+    }
+}

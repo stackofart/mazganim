@@ -1,0 +1,129 @@
+{
+  "slogan": "Nettoyage et désinfection des climatiseurs muraux à Goush Dan",
+  "orderNow": "Commander maintenant",
+  "Feedback": {
+    "title": "Commentaires",
+    "success": "Votre demande a été envoyée avec succès ! Nous vous contacterons prochainement."
+  },
+  "ContactForm": {
+    "labelName": "Nom",
+    "labelPhone": "Téléphone",
+    "validationError": "Le numéro de téléphone doit comporter soit 10 chiffres commençant par 05 (par exemple, 0523456789), soit être au format +9725XXXXXXXX (par exemple, +972523456789).",
+    "submit": "Envoyer"
+  },
+  "PriceCalculator": {
+    "title": "Calculateur de coût",
+    "quantityLabel": "Nombre de climatiseurs :",
+    "priceLabel": "Prix :"
+  },
+  "PriceList": {
+    "title": "Tarification",
+    "items": [
+      {
+        "quantity": "1 climatiseur",
+        "price": "₪250"
+      },
+      {
+        "quantity": "2 climatiseurs",
+        "price": "₪450"
+      },
+      {
+        "quantity": "3 climatiseurs",
+        "price": "₪600"
+      }
+    ],
+    "note": "Des diagnostics supplémentaires ou des modèles de climatiseurs complexes (VRF, multi-split) sont facturés séparément sur accord."
+  },
+  "InfoBlock1": {
+    "title": "À propos de notre entreprise",
+    "content": "Nous sommes spécialisés dans le nettoyage et la désinfection professionnels des climatiseurs muraux à Goush Dan depuis plus de 5 ans. Notre équipe de techniciens certifiés n’utilise que des produits de haute qualité et hypoallergéniques, ainsi que du matériel moderne, pour assurer une efficacité et une sécurité maximales pour votre domicile ou bureau."
+  },
+  "InfoBlock2": {
+    "title": "Pourquoi le nettoyage et la désinfection de votre climatiseur sont importants",
+    "content": {
+      "line1": {
+        "title": "Qualité de l’air et santé",
+        "content": "Avec le temps, les climatiseurs muraux accumulent poussière, moisissures, bactéries et allergènes. Si un nettoyage régulier n’est pas effectué (au moins une fois par an), tout cela se répand dans la pièce avec le flux d’air. En conséquence, les voies respiratoires sont irritées, des rhumes fréquents, des réactions allergiques et une détérioration générale de l’état de santé peuvent survenir."
+      },
+      "line2": {
+        "title": "Efficacité énergétique",
+        "content": "Des filtres et un évaporateur encrassés obligent le compresseur à travailler plus intensément, ce qui entraîne une augmentation de la consommation d’énergie de 10 à 25 %. Un entretien régulier permet de réduire les factures d’électricité et de prolonger la durée de vie de l’équipement."
+      },
+      "line3": {
+        "title": "Prolongation de la durée de vie de votre climatiseur",
+        "content": "La saleté accumulée gêne le fonctionnement normal du ventilateur et de l’échangeur de chaleur : les pièces s’usent plus rapidement, des bruits ou des fuites de réfrigérant peuvent survenir. Un nettoyage et une désinfection appropriés protègent les composants du climatiseur et prolongent la durée de vie de l’équipement de plusieurs années."
+      }
+    }
+  },
+  "InfoBlock3": {
+    "title": "Comment se déroule le processus de nettoyage et de désinfection",
+    "steps": [
+      {
+        "title": "Inspection et démontage",
+        "content": "Notre technicien arrive à l’heure convenue, débranche l’unité et démonte soigneusement les filtres, le boîtier et les composants pour le nettoyage."
+      },
+      {
+        "title": "Nettoyage des composants internes",
+        "content": "Les filtres sont lavés et désinfectés avec des produits spéciaux hypoallergéniques. L’échangeur de chaleur (évaporateur) est traité à la vapeur ou à l’eau à faible pression pour éliminer poussière, moisissures et dépôts."
+      },
+      {
+        "title": "Nettoyage du système de drainage",
+        "content": "Les canaux de drainage et le bac à condensats sont rincés pour éviter les obstructions et éliminer l’eau stagnante et les odeurs."
+      },
+      {
+        "title": "Nettoyage de l’unité extérieure",
+        "content": "L’échangeur de chaleur (condenseur) et le ventilateur de l’unité extérieure sont nettoyés de la poussière et des saletés à l’aide d’une haute pression. Les ailettes du radiateur sont inspectées et débarrassées des débris."
+      },
+      {
+        "title": "Désinfection et remontage",
+        "content": "Les composants internes sont traités avec une solution antiseptique pour éliminer complètement bactéries et moisissures. Ensuite, toutes les pièces sont remontées, les filtres sont réinstallés et le fonctionnement du climatiseur est testé."
+      }
+    ]
+  },
+  "ServiceArea": {
+    "title": "Zone d’intervention",
+    "content": "Nous intervenons exclusivement dans la région de Goush Dan et garantissons une intervention rapide dans les zones suivantes : Tel Aviv-Yafo, Givaatayim, Ramat Gan, Petah Tikva, Bnei Brak, Holon, Ra’anana et les villes environnantes. Si votre emplacement n’est pas répertorié, veuillez vérifier la disponibilité par téléphone ou via le formulaire en ligne."
+  },
+  "Advantages": {
+    "title": "Pourquoi nous choisir",
+    "items": [
+      {
+        "title": "Réponse rapide",
+        "content": "Nous garantissons une arrivée dans les 24 heures suivant votre demande (jours ouvrables). Le service le samedi et les jours fériés est disponible sur accord avec un supplément."
+      },
+      {
+        "title": "Garantie qualité de 30 jours",
+        "content": "Si vous constatez une baisse de performance, des bruits inhabituels ou des odeurs après le service, nous revenons gratuitement (à condition que le problème ne soit pas dû à un dommage mécanique)."
+      },
+      {
+        "title": "Produits sûrs",
+        "content": "Tous les désinfectants et agents de nettoyage sont certifiés hypoallergéniques. Nous n’utilisons pas d’acides agressifs ni de produits chimiques toxiques."
+      },
+      {
+        "title": "Tarification transparente",
+        "content": "Pas de frais cachés. Si vous êtes situé dans Goush Dan, aucun supplément n’est appliqué."
+      },
+      {
+        "title": "Techniciens professionnels",
+        "content": "Notre équipe se compose de spécialistes certifiés avec plus de 3 ans d’expérience. Nous nous formons continuellement aux nouvelles méthodes de nettoyage et de désinfection et utilisons un équipement de pointe."
+      }
+    ]
+  },
+  "CleaningRecommendations": {
+    "title": "Recommandations sur la fréquence de nettoyage",
+    "items": [
+      {
+        "title": "Climatiseurs muraux domestiques",
+        "content": "Il est recommandé d’effectuer l’entretien une fois par an."
+      },
+      {
+        "title": "Climatiseurs de bureau (fonctionnant ≥ 8 heures/jour)",
+        "content": "Il est conseillé de nettoyer deux fois par an (au printemps et fin d’été) pour éviter la surcharge et l’accumulation de bactéries."
+      },
+      {
+        "title": "Foyers avec des personnes allergiques et de jeunes enfants",
+        "content": "Il est préférable de réaliser l’opération tous les 6 mois pour une sécurité maximale."
+      }
+    ]
+  }
+}

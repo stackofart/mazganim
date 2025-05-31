@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Этот мета-тег отвечает за правильную адаптивность и масштабирование -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CoolClean</title>
+  <!-- Опционально: иконка сайта -->
+  <link rel="icon" href="/favicon.ico" />
+</head>
+<body>
+<!-- 1. Важно: именно этот div является root-ом для React.
+       Идентификатор (id) должен совпадать с тем, что вы используете в main.jsx (или main.js). -->
+<div id="root"></div>
+
+<!-- 2. Этот тег подключает ваш главный React-скрипт через Vite.
+       Пусть файл с входной точкой называется src/main.jsx (или src/main.js).
+       Путь «/src/main.jsx» говорит Vite, что надо взять этот модуль и «развернуть» его. -->
+<script type="module" src="/src/main.jsx"></script>
+</body>
+</html>

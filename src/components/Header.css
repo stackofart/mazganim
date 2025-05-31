@@ -1,0 +1,93 @@
+/* src/components/Header.css */
+
+@keyframes smooth-gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.header {
+    position: fixed;   /* фиксируем шапку */
+    top: 0;
+    left: 0;
+    width: 100%;       /* на всю ширину экрана */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    z-index: 100;      /* чтобы шапка была поверх контента */
+}
+
+/* Если у вас основной контент «уходит» под шапку,
+   добавьте у body (или у контейнера) отступ сверху: */
+body {
+    margin: 0;
+    padding-top: 100px; /* равен высоте .header */
+}
+
+/* Стили для лого и селектора языка остаются без изменений */
+/* src/components/Header.css */
+.header__logo {
+    font-family: 'Montserrat', sans-serif; /* основной и запасной шрифты */
+    font-size: 3.5rem;    /* размер текста (можно в px, em, rem) */
+    font-weight: 600;     /* допустимые: 400, 600, 700 (в зависимости от подключённых вариантов) */
+    /* ниже — опционально: межбуквенный интервал и высота строки */
+    background: linear-gradient(
+            90deg,
+            #007acc 0%,
+            #8367ff 13%,
+            #2cb5ff 37%,
+            #007acc 50%,
+            #8367ff 63%,
+            #2cb5ff 87%,
+            #007acc 100%
+    );
+
+    /* Увеличиваем размер градиентного фона,
+       чтобы при смещении в 0→100% не было «обрыва» */
+    background-size: 200% 100%;
+
+    /* Обрезаем фон «под текстом» и делаем цвет букв прозрачным */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    /* Анимация: двигаем градиент слева направо, повтор infinitely, линейно */
+    animation: smooth-gradient 4s linear infinite;
+    margin: 0;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    margin-left: 30px;
+}
+
+
+.header__lang-selector select {
+    padding: 5px 10px;
+    font-size: 1.5rem;
+    color: #003cff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #ffffff;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+/* Адаптивность для узких экранов */
+@media (max-width: 480px) {
+    .header {
+        padding: 0 10px;
+    }
+    .header__logo {
+        font-size: 2rem;
+    }
+    .header__lang-selector select {
+        font-size: 1rem;
+        padding: 2px 6px;
+    }
+}

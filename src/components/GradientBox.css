@@ -1,0 +1,63 @@
+/* ============================= */
+/* 1) Контейнер-обёртка           */
+/* ============================= */
+.rg-container {
+    /* Пусто: всё передаётся через inline-стиль */
+}
+
+/* ============================= */
+/* 2) Вращающийся фон (conic)    */
+/* ============================= */
+.rg-inner {
+    position: absolute;
+    top: -150%;
+    left: -150%;
+    width: 400%;
+    height: 400%;
+
+    background: conic-gradient(
+            from 0deg,
+            #00FFAA 0%,
+            #5CDEFF 14%,
+            #6700C2 28%,
+            #6700C2 42%,
+            #5CDEFF 66%,
+            #00FFAA 80%,
+            #5CDEFF 100%
+    );
+
+    animation: rg-rotate 8s linear infinite;
+}
+
+/* Анимация: вращаем внешний блок на 360° */
+@keyframes rg-rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ============================= */
+/* 3) Белый оверлей (“вырез”)     */
+/* ============================= */
+.rg-overlay {
+    position: absolute;
+
+    /* inset = 8px со всех сторон:
+       чем выше это значение, тем толще “рамка” из градиента будет видно */
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+
+    background-color: #dffaff;
+
+    /* Повторяем скругление родителя: если parent borderRadius = 16px, child тоже 16px */
+    border-radius: inherit;
+    /* Центрируем содержимое (текст) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 16px;
+    color: #0061b1;
+}
