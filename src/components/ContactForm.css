@@ -25,12 +25,12 @@
     color: #444;
     margin-top: 12px;
     margin-bottom: 6px;
-    text-align: left;
+    text-align: start;
 }
 
 .contact-form__required {
     color: #e53935; /* красный звездочка */
-    margin-left: 2px;
+    margin-inline-start: 2px;
 }
 
 /* Обычное поле ввода */
@@ -60,7 +60,7 @@
     color: #e53935;
     font-size: 0.85rem;
     margin-top: 4px;
-    text-align: left;
+    text-align: start;
 }
 
 /* Кнопка отправки */

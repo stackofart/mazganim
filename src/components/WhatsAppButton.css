@@ -3,7 +3,7 @@
 .whatsapp-button {
     position: fixed;
     bottom: 90px;          /* отступ снизу (если TelegramButton скрыт, можно поставить 20px) */
-    right: 20px;           /* отступ справа */
+    inset-inline-end: 20px;           /* отступ с противоположного конца (поддерживает RTL) */
     width: 60px;           /* размер кнопки */
     height: 60px;
     background-color: #25D366; /* фирменный зеленый цвет WhatsApp */

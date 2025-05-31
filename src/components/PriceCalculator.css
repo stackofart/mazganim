@@ -25,6 +25,7 @@
     color: #444;
     margin-top: 12px;
     margin-bottom: 6px;
+    text-align: start;
 }
 
 .price-calculator__input {
@@ -87,4 +88,8 @@
         margin-top: 6px;
         font-size: 1.1rem;
     }
+}
+/* Для RTL: зеркальное расположение в блоке расчета цены */
+html[dir="rtl"] .price-calculator__price {
+    flex-direction: row-reverse;
 }

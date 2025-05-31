@@ -2,6 +2,7 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
+import { metaConfig } from "./seo/meta.js";
 
 // Импортируем JSON-переводы
 import translationEN from "./locales/en/translation.json";
@@ -35,5 +36,18 @@ i18n
             escapeValue: false,     // React сам экранирует XSS, поэтому false
         },
     });
+// После инициализации — устанавливаем атрибуты <html> (lang и dir)
+(() => {
+    const rtlLangs = ["he", "ar"];
+    const setHtmlAttrs = (lng) => {
+        const cfg = metaConfig[lng] || metaConfig["en"];
+        document.documentElement.lang = cfg.htmlLang;
+        document.documentElement.dir = rtlLangs.includes(lng) ? "rtl" : "ltr";
+    };
+    // Сразу при загрузке
+    setHtmlAttrs(i18n.language);
+    // При изменении языка
+    i18n.on("languageChanged", setHtmlAttrs);
+})();
 
 export default i18n;
