@@ -1,5 +1,4 @@
 /* src/components/Header.css */
-
 @keyframes smooth-gradient {
     0% {
         background-position: 0% 50%;
@@ -77,6 +76,8 @@ body {
     cursor: pointer;
     margin-inline-end: 30px;
 }
+
+
 
 /* Адаптивность для узких экранов */
 @media (max-width: 480px) {

@@ -18,6 +18,7 @@
 .hero__title {
     font-family: 'Montserrat', sans-serif;
     font-size: 5rem;
+    font-weight: bolder;
     color: #256cff;
     /* Линейный градиент с повторяющимся набором цветовых точек */
     text-align: center;
@@ -25,8 +26,8 @@
 
 .hero__subtitle {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2.25rem;
-    font-weight: 400;
+    font-size: 2rem;
+    font-weight: bolder;
     color: #256cff;
     margin: 10px 0 30px; /* отступ сверху 10px, снизу 30px */
 }

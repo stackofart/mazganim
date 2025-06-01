@@ -4,8 +4,8 @@
     margin: 30px auto;
     padding: 20px;
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 32px;
+    box-shadow: 0 16px 16px rgba(0, 0, 0, 0.1);
 }
 
 .info-block__title {
@@ -24,6 +24,31 @@
     line-height: 1.6;
 }
 
+/* ===== макет только когда side существует ===== */
+.info-block--with-side .info-block__body {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+/* основной текст */
+.info-block__content {
+    flex: 1 1 auto;
+}
+
+/* боковой слот (карта/фото) */
+.info-block__side {
+    flex: 0 0 40%;
+    max-width: 186px;              /* «потолок» по ширине */
+    max-height: 360px;
+}
+
+.info-block__side svg,            /* SVG-карта */
+.info-block__side img {
+    width: 100%;
+    height: auto;                  /* сохраняет пропорции */
+}
+
 /* Адаптив для узких экранов */
 @media (max-width: 480px) {
     .info-block {
@@ -37,4 +62,13 @@
     .info-block__content {
         font-size: 0.95rem;
     }
+
+    .info-block__side {
+        flex: 0 0 110px;   /* фиксируем узкую колонку под карту */
+        max-width: 110px;  /* можно подогнать под реальный размер SVG */
+        margin-top: 0;     /* убираем прежний отступ вниз */
+        margin-left: 12px; /* чуть воздуха между текстом и картой */        /* отступ от текста */
+    }
+
 }
+
