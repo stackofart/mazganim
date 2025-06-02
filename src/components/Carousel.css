@@ -1,0 +1,41 @@
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px; /* поставьте свою ширину */
+    margin: 0 auto;
+}
+
+.carousel__inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel__img {
+    width: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.carousel__dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    padding: 0;
+}
+
+.dot--active {
+    background-color: rgba(255, 255, 255, 1);
+}
