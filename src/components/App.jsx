@@ -198,11 +198,7 @@ function App() {
 
             <ContactForm/>
             <InfoBlock title={"\n\n\n"}>
-                {<form action="https://formspree.io/f/mpwrzaby" method="POST">
-                    <label>Имя: <input type="text" name="name" required/></label>
-                    <label>Телефон: <input type="text" name="phone" required/></label>
-                    <button type="submit">Отправить</button>
-                </form>}
+                {'\n'}
             </InfoBlock>
             <TelegramButton/>
             <WhatsAppButton/>
