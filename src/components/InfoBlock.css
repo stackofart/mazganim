@@ -1,4 +1,9 @@
-/* src/components/InfoBlock.css */
+/* ──────────────────────────────────────────────────────────────
+   InfoBlock – итоговая версия
+   src/components/InfoBlock.css
+   ────────────────────────────────────────────────────────────── */
+
+/* Базовый блок */
 .info-block {
     max-width: 80%;
     margin: 30px auto;
@@ -8,6 +13,7 @@
     box-shadow: 0 16px 16px rgba(0, 0, 0, 0.1);
 }
 
+/* Заголовок */
 .info-block__title {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.75rem;
@@ -16,40 +22,60 @@
     margin-bottom: 12px;
 }
 
+/* Текст */
 .info-block__content {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     font-weight: 400;
     color: #444;
     line-height: 1.6;
+    flex: 1 1 auto;               /* растягивается, когда есть картинка */
 }
 
-/* ===== макет только когда side существует ===== */
+/* Лэйаут текста + картинки (широкие экраны) */
 .info-block--with-side .info-block__body {
     display: flex;
     gap: 24px;
     align-items: center;
 }
 
-/* основной текст */
-.info-block__content {
-    flex: 1 1 auto;
+/* НОВЫЙ контейнер для картинки -------------------------------- */
+.info-block__image-wrapper {
+    flex: 0 0 42%;                /* примерно 2/5 ширины */
+    max-width: 340px;             /* «потолок» для десктопа */
+    padding: 12px;
+    border-radius: 24px;
+    background: rgba(183, 0, 255, 0.04);          /* светлый фон, как на макете */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
 }
 
-/* боковой слот (карта/фото) */
-.info-block__side {
-    flex: 0 0 40%;
-    max-width: 186px;              /* «потолок» по ширине */
-    max-height: 360px;
-}
-
-.info-block__side svg,            /* SVG-карта */
-.info-block__side img {
+/* сама картинка / SVG / Canvas3D */
+.info-block__image-wrapper > * {
     width: 100%;
-    height: auto;                  /* сохраняет пропорции */
+    height: auto;
+    max-height: 360px;
+    border-radius: 12px;
 }
 
-/* Адаптив для узких экранов */
+/* ─────────── Адаптив ───────────────────────────────────────── */
+
+/* 1) Переходим в столбец ≤ 768 px */
+@media (max-width: 768px) {
+    .info-block--with-side .info-block__body {
+        flex-direction: column;     /* текст сверху, картинка снизу */
+    }
+    .info-block__image-wrapper {
+        order: 2;                   /* гарантируем, что идёт после контента */
+        width: 100%;
+        max-width: none;
+        margin-top: 24px;
+    }
+}
+
+/* 2) Мелкие правки совсем для мобилок ≤ 480 px */
 @media (max-width: 480px) {
     .info-block {
         margin: 20px 10px;
@@ -62,13 +88,6 @@
     .info-block__content {
         font-size: 0.95rem;
     }
-
-    .info-block__side {
-        flex: 0 0 110px;   /* фиксируем узкую колонку под карту */
-        max-width: 110px;  /* можно подогнать под реальный размер SVG */
-        margin-top: 0;     /* убираем прежний отступ вниз */
-        margin-left: 12px; /* чуть воздуха между текстом и картой */        /* отступ от текста */
-    }
-
 }
 
+/* ────────────────────────────────────────────────────────────── */

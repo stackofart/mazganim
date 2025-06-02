@@ -1,27 +1,22 @@
-import React from 'react';
 import './InfoBlock.css';
 
-const InfoBlock = ({ title, children, side }) => {
-    /* если side есть → добавляем модификатор для flex-раскладки */
-    const withSide = Boolean(side);
+export default function InfoBlock({ title, children, image }) {
+    const withSide = Boolean(image);
 
     return (
-        <section className={`info-block${withSide ? ' info-block--with-side' : ''}`}>
+        <section className={`info-block ${withSide ? 'info-block--with-side' : ''}`}>
+            {title && <h2 className="info-block__title">{title}</h2>}
 
             <div className="info-block__body">
-                {withSide && (
-                    <div className="info-block__side">
-                        {side}
-                    </div>
-                )}
-                <div className="info-block__content">
-                    <h3 className="info-block__title">{title}</h3>
+                <article className="info-block__content">{children}</article>
 
-                    {children}
-                </div>
+                {withSide && (
+                    <figure className="info-block__image-wrapper">
+                        {/* любой React-element: <img>, <svg>, <Canvas3D /> … */}
+                        {image}
+                    </figure>
+                )}
             </div>
         </section>
     );
-};
-
-export default InfoBlock;
+}
