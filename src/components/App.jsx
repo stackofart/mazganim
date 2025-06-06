@@ -2,7 +2,6 @@ import Header from "./Header.jsx";
 import Hero from './Hero.jsx';
 import InfoBlock from "./InfoBlock.jsx";
 import ContactForm from "./ContactForm.jsx";
-import PriceCalculator from "./PriceCalculator.jsx";
 import TelegramButton from "./TgButton.jsx";
 import WhatsAppButton from "./WhatsAppButton.jsx";
 import {useTranslation} from "react-i18next";

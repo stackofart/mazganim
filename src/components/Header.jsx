@@ -18,11 +18,11 @@ export default function Header() {
                     value={i18n.language}
                     onChange={(e) => i18n.changeLanguage(e.target.value)}
                 >
+                    <option value="he">🇮🇱</option>
                     <option value="ru">🇷🇺</option>
                     <option value="ar">🇸🇦</option>
                     <option value="fr">🇫🇷</option>
                     <option value="en">🇬🇧</option>
-                    <option value="he">🇮🇱</option>
                     {/* … другие языки */}
                 </select>
             </div>
