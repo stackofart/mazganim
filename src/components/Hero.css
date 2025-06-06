@@ -7,12 +7,18 @@
     height: 65vh;        /* высота = вся высота экрана минус Header */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* align text at top; button will be pushed to bottom via margin-top auto */
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
     padding: 20px;                             /* внутренние отступы не влияют на ширину */
     background-color: #f5fafa;
     box-sizing: border-box;                    /* чтобы padding не «ломал» 100% ширины */
+}
+/* ensure OrderButton is always pinned to the bottom of the hero section */
+.hero .rg-container {
+    margin-top: auto;
+    margin-bottom: 0;
 }
 
 .hero__title {
@@ -31,11 +37,20 @@
     font-size: 2rem;
     font-weight: bolder;
     color: #ffffff;
-    margin: 0px 0 280px; /* отступ сверху 10px, снизу 30px */
+    /* small bottom margin; button will sit at bottom via flex and its own auto margin */
+    margin: 0px 0 30px;
 }
 
 /* Адаптив: уменьшаем всё на узких экранах */
 @media (max-width: 480px) {
+
+/* push order button to bottom within hero and reset its bottom margin */
+.hero .rg-container {
+    /* absorb extra space above, moving button to bottom */
+    margin-top: auto;
+    /* reset any negative bottom margin from OrderButton.css */
+    margin-bottom: 0;
+}
     .hero__title {
         font-size: 2rem;
     }

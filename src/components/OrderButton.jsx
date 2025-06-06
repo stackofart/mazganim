@@ -2,8 +2,8 @@ import React from 'react';
 import './OrderButton.css';
 
 const OrderButton = ({
-                           width = '190px',
-                           height = '65px',
+                           width = '180px',
+                           height = '45px',
                            borderRadius = '64px',
                            text,
                            href
@@ -13,8 +13,8 @@ const OrderButton = ({
         width,
         height,
         borderRadius,
-        position: 'relative', // чтобы потом “overlay” и “inner” внутри позиционировались по контейнеру
-        overflow: 'hidden',   // обрезаем вращающийся фон по краям контейнера
+        position: 'relative',
+        overflow: 'hidden'
     };
 
     return (
