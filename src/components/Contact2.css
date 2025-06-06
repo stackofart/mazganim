@@ -1,0 +1,21 @@
+
+.cont_sec {
+    display: flex;
+    justify-content: center;
+    flex-direction: row; /* элементы в строку */
+    background-color: #df0000;
+}
+
+.contact {
+    width: 80%;
+    max-width: 500px;
+    height: 300px;
+    background-color: #0088CC;
+    border-radius: 32px;
+}
+
+@media (max-width: 1024px) {
+    .cont_sec {
+        flex-direction: column; /* при узком экране — в столбец */
+    }
+}

@@ -9,7 +9,7 @@ import {useTranslation} from "react-i18next";
 import React from "react";
 import AutoCarousel from "./AutoCarousel.jsx";
 import mapSVG from "../assets/map.svg";
-import airBg from "../assets/bgn.png";
+import Footer from "./Footer.jsx";
 
 function App() {
    // const [locale, setLocale] = useLocale();
@@ -20,8 +20,6 @@ function App() {
             <Header/>
             {/* Остальной контент страницы */}
             <Hero/>
-
-
 
             <InfoBlock title={t("InfoBlock1.title")}>
             <p>{t("InfoBlock1.content")}</p>
@@ -76,9 +74,7 @@ function App() {
                     ))}
                 </ul>
             </InfoBlock>
-            <InfoBlock title={t("ServiceArea.title")} image={<img src={mapSVG} alt="Map"/>}>
-                <p>{t("ServiceArea.content")}</p>
-            </InfoBlock>
+
             <InfoBlock title={t("Advantages.title")}>
                 <ul>
                     {t("Advantages.items", {returnObjects: true}).map((adv, index) => (
@@ -96,6 +92,10 @@ function App() {
                         </li>
                     ))}
                 </ul>
+            </InfoBlock>
+
+            <InfoBlock title={t("ServiceArea.title")} image={<img src={mapSVG} alt="Map"/>}>
+                <p>{t("ServiceArea.content")}</p>
             </InfoBlock>
 
             <InfoBlock title={t("PriceList.title")} side={<svg width="420" height="265" viewBox="0 0 420 265"
@@ -123,11 +123,34 @@ function App() {
                 <p>{t("PriceList.note")}</p>
             </InfoBlock>
 
+            <InfoBlock title={t("Contacts.title")}>
+                <ul>
+                    <li>
+                        <span className="contact-label">{t("Contacts.telephone")}: </span>
+                        <a className="contact-link" href="tel:0547577371">+7 (123) 456-78-90</a>
+                    </li>
+                    <li >
+                        <span className="contact-label">{t("Contacts.email")}: </span>
+                        <a className="contact-link" href="mailto:info@example.com">info@example.com</a>
+                    </li>
+                    <li>
+                        <span className="contact-label">{t("Contacts.wa")}: </span>
+                        <a className="social-link" href="https://wa.me/71234567890" target="_blank"
+                           rel="noopener">WhatsApp</a>
+                    </li>
+                    <li>
+                        <span className="contact-label">{t("Contacts.tg")}: </span>
+                        <a className="social-link" href="https://t.me/yourusername" target="_blank"
+                           rel="noopener">Telegram</a>
+                    </li>
+                </ul>
+
+            </InfoBlock>
+
+
             <ContactForm/>
 
-            <InfoBlock title={"\n\n\n"}>
-                {'\n'}
-            </InfoBlock>
+            <Footer text={t("footer")}/>
 
             <TelegramButton/>
             <WhatsAppButton/>
