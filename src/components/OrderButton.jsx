@@ -1,18 +1,9 @@
 import React from 'react';
-import './GradientBox.css';
+import './OrderButton.css';
 
-/**
- * Рендерит прямоугольник со скруглёнными углами,
- * внутри которого анимируется круговой градиент.
- *
- * Пропсы:
- *   width        — ширина (по умолчанию '200px')
- *   height       — высота (по умолчанию '100px')
- *   borderRadius — радиус скругления (по умолчанию '16px')
- */
-const GradientBox = ({
-                           width = '140px',
-                           height = '55px',
+const OrderButton = ({
+                           width = '190px',
+                           height = '65px',
                            borderRadius = '64px',
                            text,
                            href
@@ -43,4 +34,4 @@ const GradientBox = ({
     );
 };
 
-export default GradientBox;
+export default OrderButton;

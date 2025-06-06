@@ -1,8 +1,8 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import "./Hero.css";
-import GradientBox from "./GradientBox.jsx";
-import airBg from "../assets/bgn.png";
+import OrderButton from "./OrderButton.jsx";
+import family from "../assets/family1.png";
 
 
 export default function Hero() {
@@ -11,15 +11,16 @@ export default function Hero() {
     return (
         <section className="hero"
                  style={{
-                     backgroundImage: `url(${airBg})`,
+                     backgroundImage: `url(${family})`,
                      backgroundSize: "cover",
                      backgroundRepeat: "no-repeat",
-                     backgroundPosition: "center",
+                     backgroundPosition: "bottom",
+
                  }}>
             <h1 className="hero__title">CoolClean</h1>
             <h1 className="hero__subtitle">{t("slogan")}</h1>
-            {/* Кнопка тоже на i18n: */}
-            <GradientBox text={t("orderNow")} href={"#contact"}/>
+
+            <OrderButton text={t("orderNow")} href={"#contact"}/>
 
         </section>
     );

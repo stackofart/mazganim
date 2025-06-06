@@ -3,6 +3,7 @@
 /* ============================= */
 .rg-container {
     /* Пусто: всё передаётся через inline-стиль */
+    bottom: -5%;
 }
 
 /* ============================= */
@@ -49,7 +50,7 @@
     right: 2px;
     bottom: 2px;
 
-    background-color: #dffaff;
+    background-color: #ffffff;
 
     /* Повторяем скругление родителя: если parent borderRadius = 16px, child тоже 16px */
     border-radius: inherit;
@@ -57,7 +58,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
     font-size: 16px;
     color: #0061b1;
 }

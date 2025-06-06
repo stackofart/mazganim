@@ -5,7 +5,8 @@
 
 /* Базовый блок */
 .info-block {
-    max-width: 80%;
+    width: 80%;
+    max-width: 1000px;
     margin: 30px auto;
     padding: 20px;
     background-color: #fff;
@@ -45,7 +46,7 @@
     max-width: 340px;             /* «потолок» для десктопа */
     padding: 12px;
     border-radius: 24px;
-    background: rgba(183, 0, 255, 0.04);          /* светлый фон, как на макете */
+    background: rgba(124, 170, 255, 0.09);          /* светлый фон, как на макете */
     display: flex;
     justify-content: center;
     align-items: center;

@@ -1,0 +1,21 @@
+/* AutoCarousel.css - styles for AutoCarousel component */
+
+/* Override slick-slide to center content vertically and horizontally */
+/* Wrapper for each slide: fixed frame for absolute centering */
+.carousel-slide {
+    position: relative;
+    width: 100%;
+    height: 460px; /* desired frame height */
+    overflow: hidden;
+}
+
+/* Style images with consistent height and maintain aspect ratio */
+.carousel-slide .carousel-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* enforce equal height for all images */
+    height: 100%;
+    width: auto;
+}

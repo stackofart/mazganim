@@ -6,6 +6,7 @@
     "success": "Your request has been submitted successfully! We will contact you soon."
   },
   "ContactForm": {
+    "title": "Contact us",
     "labelName": "Name",
     "labelPhone": "Phone",
     "validationError": "The phone number must be either 10 digits starting with 05 (e.g., 0523456789) or in the format +9725XXXXXXXX (e.g., +972523456789).",
