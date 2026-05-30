@@ -126,7 +126,7 @@ function App() {
                 <ul>
                     <li>
                         <span className="contact-label">{t("Contacts.telephone")}: </span>
-                        <a className="contact-link" href="tel:0547577371">+7 (123) 456-78-90</a>
+                        <a className="contact-link" href="tel:‎0547577371">‎0547577371</a>
                     </li>
                     <li >
                         <span className="contact-label">{t("Contacts.email")}: </span>
